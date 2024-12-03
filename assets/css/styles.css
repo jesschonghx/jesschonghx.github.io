@@ -1,0 +1,62 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Import the custom font */
+@font-face {
+    font-family: 'Vergilia';
+    src: url('../fonts/Vergilia-mL6aa.ttf') format('truetype');
+
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCFCFB;
+    color: #1A1925;
+    padding: 1.5vw 10vw;
+  }
+  
+  .nav-left {
+    font-size: 1rem;
+    font-weight: 1000;
+    font-family: 'Vergilia';
+  }
+
+  .nav-left a{
+    text-decoration: none;
+    color: #1A1925;
+  }
+  
+  .nav-right {
+    list-style-type: none;
+    display: flex;
+    gap: 2.8vw; /* Space between menu items */
+  }
+  
+  .nav-right li a {
+    color: #1A1925;
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-size: 0.8rem;
+    font-weight: 500;
+    /* transition: all 300ms ease-in; */
+    padding: 0.4vw;
+  }
+  
+  .nav-right li a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    /* transition: 500ms; */
+  }
+
+  .nav-left:hover {
+    cursor: pointer;
+  }
+  
