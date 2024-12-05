@@ -14,6 +14,16 @@ body, ul, li {
     src: url('../fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
   }
   
+  h3 {
+    font-family: 'Vergilia';
+  }
+
+  p {
+    font-family: 'Manrope';
+    font-size: 1vw;
+  }
+  
+  /* Navigation bar start */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,7 +34,7 @@ body, ul, li {
   }
   
   .nav-left {
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: 1000;
     font-family: 'Vergilia';
   }
@@ -44,7 +54,7 @@ body, ul, li {
     color: #1A1925;
     text-decoration: none;
     font-family: 'Manrope';
-    font-size: 0.8rem;
+    font-size: 0.9vw;
     font-weight: 500;
     /* transition: all 300ms ease-in; */
     padding: 0.4vw;
@@ -59,4 +69,160 @@ body, ul, li {
   .nav-left:hover {
     cursor: pointer;
   }
+   /* Navigation bar end */
+
+  /* Banner start */
+  .banner {
+    display: inline-flex;
+    width: 100%;
+    background-color: #F5F0E7;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  .banner-left {
+    width: 50%;
+  }
+
+  #banner-left-image {
+    width: 34vw;
+    display: block;
+    margin: auto;
+    
+  }
+
+  .banner-right {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  #banner-right-text {
+    max-width: 25vw;
+    word-wrap: break-word;
+  }
+
+  #banner-right-line {
+    width: 8vw;
+  }
+  /* Banner end */
+
+  /* Project start */
+  .project-container{
+    padding: 3vw 12vw;
+  }
+
+  #project-header-text {
+    font-size: 1.5vw;
+  }
+
+  #nhg-project, #capitalview-project, #design-project, #gongcha-project {
+    display: inline-flex;
+    align-items: center; /* Ensure vertical alignment if needed */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 1vw; /* Add spacing between elements for better responsiveness */
+  }
+
+  .project {
+    margin: 2vw 0;
+    transition: all .2s ease-in-out;
+  }
+
+  .project:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: 250ms;
+  }
+  
+  .project-image {
+    width: 38vw;
+    position: relative; /* Needed for overlapping */
+  }
+  
+  .project-text-container {
+    background-color: #282828;
+    padding: 2vw;
+    border-radius: 8px;
+    position: relative; /* Allows offset with negative margins */
+    margin-left: -3vw; /* Adjust this value for desired overlap */
+    z-index: 1; /* Ensures it appears above the image */
+    max-width: 30vw; /* Make sure it's responsive */
+  }
+  
+  .project-text-header {
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    margin-top: 0;
+  }
+  
+  .project-text {
+    color: #F5F0E7;
+  }
+  
+  .project-read-more {
+    display: inline-flex;
+    align-items: center; /* Vertical alignment for text and arrow */
+    border-bottom: 1px solid #282828;
+    transition: 250ms;
+  }
+
+  .project-read-more:hover {
+    border-bottom: 1px solid #F5F0E7;
+    transition: 250ms;
+  }
+  
+  .read-more-text {
+    color: #F5F0E7;
+    margin: 0 0.25vw 0 0;
+  }
+  
+  .read-more-arrow {
+    max-width: 1.5vw;
+  }
+  
+  /* Project end */
+
+  /* Footer start */
+  footer {
+    background-color: #EFEBF0;
+    padding: 6vw 0;
+  }
+
+  #footer-star {
+    width: 3vw;
+    display: block;
+    margin: auto;
+  }
+
+  .footer-link-group {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .footer-link {
+    padding: 1.5vw;
+  }
+
+  .footer-link a{
+    text-decoration: none;
+    color: #282828;
+  }
+
+  .footer-link a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .footer-credit {
+    text-align: center;
+  }
+
+  #design-credit{
+    margin: 0.5vw 0;
+  }
+
+  #coding-credit {
+    margin-top: 0.5vw;
+  }
+  /* Footer end */
   

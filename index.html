@@ -5,18 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessica's Website</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/scripts/script.js"></script>
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-left"><a href="#top">JESSCHONG</a></div>
       <ul class="nav-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#work">WORK</a></li>
+        <li><a id="work-link" href="#work">WORK</a></li>
         <li>
-          <a href="https://www.linkedin.com/in/jessicachonghx/">LINKEDIN</a>
+          <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
+            >LINKEDIN</a
+          >
         </li>
         <li><a href="#contact">RESUME</a></li>
       </ul>
     </nav>
+
+    <!-- Banner  -->
+    <div class="banner">
+      <div class="banner-left">
+        <img id="banner-left-image" src="assets/images/banner_left_image.svg" />
+      </div>
+      <div class="banner-right">
+        <p id="banner-right-text">
+          A nature-loving UI/UX designer who loves crafting beautiful and
+          meaningful things.
+        </p>
+        <img id="banner-right-line" src="assets/images/banner_right_line.svg" />
+      </div>
+    </div>
+    <!-- Projects -->
+    <div class="project-container">
+      <!-- work navigation bar links here -->
+      <div id="work"></div>
+      <h3 id="project-header-text">Freshly potted works...</h3>
+      <!-- NHG Project -->
+      <div id="nhg-project" class="project">
+        <img class="project-image" src="assets/images/main_nhg.svg" />
+        <div class="project-text-container">
+          <h3 class="project-text-header">NHG Cares Partners Portal</h3>
+          <p class="project-text">
+            Gathered feedback and requirements, designed and launched in 4
+            months. The portal has onboarded 22 community partners and automate
+            about 1,200 programmes across 100 sites in Central and North
+            Singapore.
+          </p>
+          <div class="project-read-more">
+            <p class="read-more-text">Read More</p>
+            <img
+              class="read-more-arrow"
+              src="assets/images/read_more_arrow.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- CapitalView Project -->
+      <div id="capitalview-project" class="project">
+        <img class="project-image" src="assets/images/main_capital_view.svg" />
+        <div class="project-text-container">
+          <h3 class="project-text-header">CapitalView</h3>
+          <p class="project-text">
+            Partnered with UBS, conducted interviews, with design thinking
+            methodologies guiding the process. Improved turnover time for the
+            UBS team when searching for accurate, cap table data for private
+            companies in Singapore.
+          </p>
+          <div class="project-read-more">
+            <p class="read-more-text">Read More</p>
+            <img
+              class="read-more-arrow"
+              src="assets/images/read_more_arrow.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Design Revamp Project -->
+      <div id="design-project" class="project">
+        <img class="project-image" src="assets/images/main_design_revamp.svg" />
+        <div class="project-text-container">
+          <h3 class="project-text-header">Design System Revamp</h3>
+          <p class="project-text">
+            Lorem ipsum dolor sit amet consectetur. Sem sapien porta posuere
+            augue hendrerit viverra sit placerat velit.
+          </p>
+          <div class="project-read-more">
+            <p class="read-more-text">Read More</p>
+            <img
+              class="read-more-arrow"
+              src="assets/images/read_more_arrow.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Gongcha Project -->
+      <div id="gongcha-project" class="project">
+        <img class="project-image" src="assets/images/main_gongcha.svg" />
+        <div class="project-text-container">
+          <h3 class="project-text-header">Gongcha App Revamp</h3>
+          <p class="project-text">
+            Lorem ipsum dolor sit amet consectetur. Sem sapien porta posuere
+            augue hendrerit viverra sit placerat velit.
+          </p>
+          <div class="project-read-more">
+            <p class="read-more-text">Read More</p>
+            <img
+              class="read-more-arrow"
+              src="assets/images/read_more_arrow.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img id="footer-star" src="assets/images/footer_star.svg" />
+      <div class="footer-link-group">
+        <p id="footer-email" class="footer-link"><a href="">EMAIL</a></p>
+        <p id="footer-linkedin" class="footer-link">
+          <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
+            >LINKEDIN</a
+          >
+        </p>
+        <p id="footer-resume" class="footer-link"><a href="">RESUME</a></p>
+      </div>
+      <div class="footer-credit">
+        <p id="design-credit">Website designed by me</p>
+        <p id="coding-credit">Coded by Brian Chong</p>
+      </div>
+    </footer>
   </body>
 </html>
