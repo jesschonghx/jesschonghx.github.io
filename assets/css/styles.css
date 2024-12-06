@@ -30,7 +30,7 @@ body, ul, li {
     align-items: center;
     background-color: #FCFCFB;
     color: #1A1925;
-    padding: 1.5vw 10vw;
+    padding: 1.5vw 12vw;
   }
   
   .nav-left {
@@ -107,31 +107,29 @@ body, ul, li {
   }
   /* Banner end */
 
-  /* Project start */
+  /* Projects start */
   .project-container{
     padding: 3vw 12vw;
   }
 
-  #project-header-text {
+  #project-header-text, #stay-tuned-text {
     font-size: 1.5vw;
+    color: #3B3F64;
   }
 
   #nhg-project, #capitalview-project, #design-project, #gongcha-project {
     display: inline-flex;
     align-items: center; /* Ensure vertical alignment if needed */
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 1vw; /* Add spacing between elements for better responsiveness */
+    gap: 1vw; 
+    margin: 2.5vw 0;
   }
 
-  .project {
-    margin: 2vw 0;
-    transition: all .2s ease-in-out;
-  }
-
-  .project:hover {
+  #nhg-project:hover, #capitalview-project:hover, #design-project:hover, #gongcha-project:hover {
     transform: scale(1.01);
     cursor: pointer;
-    transition: 250ms;
+    transition: 0.250s ease-in-out;
+    opacity: 0.9;
   }
   
   .project-image {
@@ -179,8 +177,68 @@ body, ul, li {
   .read-more-arrow {
     max-width: 1.5vw;
   }
-  
-  /* Project end */
+  /* Projects end */
+
+  /* NHG Project start */
+
+  .nhg-container{
+    padding: 3vw 12vw;
+  }
+
+  #nhg-title {
+    width: 78vw;
+    margin-top: 4vw;
+  }
+
+  .project-overview-container {
+    display: flex;
+    gap: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .overview-title {
+    font-weight: 600;
+  }
+
+  .overview-description {
+    max-width: 20vw;
+    word-wrap: break-word;
+  }
+
+  #nhg-image1, #nhg-image6, #nhg-image7 {
+    max-width: 100%;
+  }
+
+  .project-description-container {
+    margin: 6vw auto;
+    max-width: 40vw;
+  }
+
+  .project-description-title {
+    font-size: 1.5vw;
+  }
+
+  #nhg-image2, #nhg-image3, #nhg-image4, #nhg-image5 {
+    width: 52vw;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .image-caption {
+    margin: 1vw 0 6vw 0;
+    text-align: center;
+    color: #646464;
+  }
+
+  .dot-separator {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 6vw;
+  }
+
+  /* NHG Project end */
 
   /* Footer start */
   footer {

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessica's Website</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="assets/css/aos.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-left"><a href="#top">JESSCHONG</a></div>
       <ul class="nav-right">
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
         <li><a id="work-link" href="#work">WORK</a></li>
         <li>
           <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
@@ -41,7 +41,12 @@
       <div id="work"></div>
       <h3 id="project-header-text">Freshly potted works...</h3>
       <!-- NHG Project -->
-      <div id="nhg-project" class="project">
+      <div
+        id="nhg-project"
+        class="project"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <img class="project-image" src="assets/images/main_nhg.svg" />
         <div class="project-text-container">
           <h3 class="project-text-header">NHG Cares Partners Portal</h3>
@@ -61,7 +66,12 @@
         </div>
       </div>
       <!-- CapitalView Project -->
-      <div id="capitalview-project" class="project">
+      <div
+        id="capitalview-project"
+        class="project"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <img class="project-image" src="assets/images/main_capital_view.svg" />
         <div class="project-text-container">
           <h3 class="project-text-header">CapitalView</h3>
@@ -81,7 +91,12 @@
         </div>
       </div>
       <!-- Design Revamp Project -->
-      <div id="design-project" class="project">
+      <div
+        id="design-project"
+        class="project"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <img class="project-image" src="assets/images/main_design_revamp.svg" />
         <div class="project-text-container">
           <h3 class="project-text-header">Design System Revamp</h3>
@@ -99,7 +114,12 @@
         </div>
       </div>
       <!-- Gongcha Project -->
-      <div id="gongcha-project" class="project">
+      <div
+        id="gongcha-project"
+        class="project"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <img class="project-image" src="assets/images/main_gongcha.svg" />
         <div class="project-text-container">
           <h3 class="project-text-header">Gongcha App Revamp</h3>
@@ -116,6 +136,8 @@
           </div>
         </div>
       </div>
+
+      <h3 id="stay-tuned-text">Stay tuned for more case studies...</h3>
     </div>
 
     <footer>
@@ -134,5 +156,21 @@
         <p id="coding-credit">Coded by Brian Chong</p>
       </div>
     </footer>
+    <!-- Import scripts -->
+    <script src="assets/scripts/aos.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <script>
+      // Gongcha Behance link
+      document.getElementById("gongcha-project").onclick = function () {
+        window.open(
+          "https://www.behance.net/gallery/125676387/OrderCollectBeat-the-crowd-Redesigning-Gong-cha-app",
+          "_blank"
+        );
+      };
+      // NHG Project link
+      document.getElementById("nhg-project").onclick = function () {
+        window.location.href = "nhg.html";
+      };
+    </script>
   </body>
 </html>
