@@ -1,286 +1,336 @@
 /* Reset some default styles */
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Import the custom font */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Import the custom font */
 @font-face {
-    font-family: 'Vergilia';
-    src: url('../fonts/Vergilia-mL6aa.ttf') format('truetype');
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
+}
 
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
-  }
-  
-  h3 {
-    font-family: 'Vergilia';
-  }
+@font-face {
+  font-family: "Relmond";
+  src: url("../fonts/Relmond/Relmond.ttf") format("truetype");
+}
 
-  p {
-    font-family: 'Manrope';
-    font-size: 1vw;
-  }
-  
-  /* Navigation bar start */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FCFCFB;
-    color: #1A1925;
-    padding: 1.5vw 12vw;
-  }
-  
-  .nav-left {
-    font-size: 1.2vw;
-    font-weight: 1000;
-    font-family: 'Vergilia';
-  }
+h3 {
+  font-family: "Relmond";
+  font-weight: 300;
+}
 
-  .nav-left a{
-    text-decoration: none;
-    color: #1A1925;
-  }
-  
-  .nav-right {
-    list-style-type: none;
-    display: flex;
-    gap: 2.8vw; /* Space between menu items */
-  }
-  
-  .nav-right li a {
-    color: #1A1925;
-    text-decoration: none;
-    font-family: 'Manrope';
-    font-size: 0.9vw;
-    font-weight: 500;
-    /* transition: all 300ms ease-in; */
-    padding: 0.4vw;
-  }
-  
-  .nav-right li a:hover {
-    text-decoration: underline;
-    font-weight: 600;
-    /* transition: 500ms; */
-  }
+p {
+  font-family: "Manrope";
+  font-size: 1vw;
+}
 
-  .nav-left:hover {
-    cursor: pointer;
-  }
-   /* Navigation bar end */
+/* Navigation bar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfb;
+  color: #1a1925;
+  padding: 1.5vw 12vw;
+}
 
-  /* Banner start */
-  .banner {
-    display: inline-flex;
-    width: 100%;
-    background-color: #F5F0E7;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-  }
+.nav-left {
+  font-size: 1.1vw;
+  font-weight: 1000;
+  font-family: "Relmond";
+}
 
-  .banner-left {
-    width: 50%;
-  }
+.nav-left a {
+  text-decoration: none;
+  color: #1a1925;
+  font-size: 1.1vw;
+}
 
-  #banner-left-image {
-    width: 34vw;
-    display: block;
-    margin: auto;
-    
-  }
+.nav-right {
+  list-style-type: none;
+  display: flex;
+  gap: 2.8vw; /* Space between menu items */
+}
 
-  .banner-right {
-    width: 50%;
-    display: block;
-    margin: auto;
-  }
+.nav-right li a {
+  color: #1a1925;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-size: 0.9vw;
+  font-weight: 500;
+  /* transition: all 300ms ease-in; */
+  padding: 0.4vw;
+}
 
-  #banner-right-text {
-    max-width: 25vw;
-    word-wrap: break-word;
-  }
+.nav-right li a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  /* transition: 500ms; */
+}
 
-  #banner-right-line {
-    width: 8vw;
-  }
-  /* Banner end */
+.nav-left:hover {
+  cursor: pointer;
+}
+/* Navigation bar end */
 
-  /* Projects start */
-  .project-container{
-    padding: 3vw 12vw;
-  }
+/* Banner start */
+.banner {
+  display: inline-flex;
+  width: 100%;
+  background-color: #f5f0e7;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
 
-  #project-header-text, #stay-tuned-text {
-    font-size: 1.5vw;
-    color: #3B3F64;
-  }
+.banner-left {
+  width: 50%;
+  display: inline-flex;
+}
 
-  #nhg-project, #capitalview-project, #design-project, #gongcha-project {
-    display: inline-flex;
-    align-items: center; /* Ensure vertical alignment if needed */
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 1vw; 
-    margin: 2.5vw 0;
-  }
+#banner-left-image {
+  width: 34vw;
+  position: relative;
+  margin: auto;
+}
 
-  #nhg-project:hover, #capitalview-project:hover, #design-project:hover, #gongcha-project:hover {
-    transform: scale(1.01);
-    cursor: pointer;
-    transition: 0.250s ease-in-out;
-    opacity: 0.9;
-  }
-  
-  .project-image {
-    width: 38vw;
-    position: relative; /* Needed for overlapping */
-  }
-  
-  .project-text-container {
-    background-color: #282828;
-    padding: 2vw;
-    border-radius: 8px;
-    position: relative; /* Allows offset with negative margins */
-    margin-left: -3vw; /* Adjust this value for desired overlap */
-    z-index: 1; /* Ensures it appears above the image */
-    max-width: 30vw; /* Make sure it's responsive */
-  }
-  
-  .project-text-header {
-    color: #FFFFFF;
-    font-size: 1.5vw;
-    margin-top: 0;
-  }
-  
-  .project-text {
-    color: #F5F0E7;
-  }
-  
-  .project-read-more {
-    display: inline-flex;
-    align-items: center; /* Vertical alignment for text and arrow */
-    border-bottom: 1px solid #282828;
-    transition: 250ms;
-  }
+#banner-left-gif {
+  height: 10vw;
+  position: relative;
+  margin-left: -24vw;
+  margin-top: 4vw;
+  z-index: 1;
+}
 
-  .project-read-more:hover {
-    border-bottom: 1px solid #F5F0E7;
-    transition: 250ms;
-  }
-  
-  .read-more-text {
-    color: #F5F0E7;
-    margin: 0 0.25vw 0 0;
-  }
-  
-  .read-more-arrow {
-    max-width: 1.5vw;
-  }
-  /* Projects end */
+.banner-right {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
 
-  /* NHG Project start */
+#banner-right-text {
+  max-width: 25vw;
+  word-wrap: break-word;
+}
 
-  .nhg-container{
-    padding: 3vw 12vw;
-  }
+#banner-right-line {
+  width: 8vw;
+}
+/* Banner end */
 
-  #nhg-title {
-    width: 78vw;
-    margin-top: 4vw;
-  }
+/* Projects start */
+.project-container {
+  padding: 3vw 12vw;
+}
 
-  .project-overview-container {
-    display: flex;
-    gap: 10vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-  }
+#stay-tuned-text {
+  font-size: 1.8vw;
+  color: #3b3f64;
+  margin-bottom: 4vw;
+}
 
-  .overview-title {
-    font-weight: 600;
-  }
+#project-header-text {
+  font-size: 1.6vw;
+  color: #3b3f64;
+  margin-bottom: 0;
+}
 
-  .overview-description {
-    max-width: 20vw;
-    word-wrap: break-word;
-  }
+#nhg-project,
+#capitalview-project,
+#design-project,
+#gongcha-project {
+  display: inline-flex;
+  align-items: center; /* Ensure vertical alignment if needed */
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 1vw;
+  margin: 2.5vw 0;
+}
 
-  #nhg-image1, #nhg-image6, #nhg-image7 {
-    max-width: 100%;
-  }
+#nhg-project:hover,
+#capitalview-project:hover,
+#design-project:hover,
+#gongcha-project:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  opacity: 0.9;
+}
 
-  .project-description-container {
-    margin: 6vw auto;
-    max-width: 40vw;
-  }
+.project-image {
+  width: 38vw;
+  position: relative; /* Needed for overlapping */
+}
 
-  .project-description-title {
-    font-size: 1.5vw;
-  }
+.project-text-container {
+  background-color: #282828;
+  padding: 2vw;
+  border-radius: 8px;
+  position: relative; /* Allows offset with negative margins */
+  margin-left: -3vw; /* Adjust this value for desired overlap */
+  z-index: 1; /* Ensures it appears above the image */
+  max-width: 30vw; /* Make sure it's responsive */
+}
 
-  #nhg-image2, #nhg-image3, #nhg-image4, #nhg-image5 {
-    width: 52vw;
-    margin: 0 auto;
-    display: block;
-  }
+.project-text-header {
+  color: #ffffff;
+  font-size: 2.4vw;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
 
-  .image-caption {
-    margin: 1vw 0 6vw 0;
-    text-align: center;
-    color: #646464;
-  }
+.project-text {
+  color: #f5f0e7;
+  margin: 1.2vw 0 1.4vw 0;
+}
 
-  .dot-separator {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 6vw;
-  }
+.project-read-more {
+  display: inline-flex;
+  align-items: center; /* Vertical alignment for text and arrow */
+  border-bottom: 1px solid #282828;
+  transition: 250ms;
+}
 
-  /* NHG Project end */
+.project-read-more:hover {
+  border-bottom: 1px solid #f5f0e7;
+  transition: 250ms;
+}
 
-  /* Footer start */
-  footer {
-    background-color: #EFEBF0;
-    padding: 6vw 0;
-  }
+.read-more-text {
+  color: #f5f0e7;
+  margin: 0 0.25vw 0 0;
+}
 
-  #footer-star {
-    width: 3vw;
-    display: block;
-    margin: auto;
-  }
+.read-more-arrow {
+  max-width: 1.5vw;
+}
+/* Projects end */
 
-  .footer-link-group {
-    display: flex;
-    justify-content: center; 
-  }
+/* NHG Project start */
 
-  .footer-link {
-    padding: 1.5vw;
-  }
+.nhg-container {
+  padding: 2vw 12vw;
+}
 
-  .footer-link a{
-    text-decoration: none;
-    color: #282828;
-  }
+#nhg-title {
+  width: 78vw;
+  margin: 6vw 12vw;
+}
 
-  .footer-link a:hover {
-    font-weight: 600;
-    text-decoration: underline;
-  }
+.project-overview-container {
+  display: flex;
+  gap: 10vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
 
-  .footer-credit {
-    text-align: center;
-  }
+.overview-title {
+  font-weight: 600;
+}
 
-  #design-credit{
-    margin: 0.5vw 0;
-  }
+.overview-description {
+  max-width: 20vw;
+  word-wrap: break-word;
+}
 
-  #coding-credit {
-    margin-top: 0.5vw;
-  }
-  /* Footer end */
-  
+#nhg-image1,
+#nhg-image6,
+#nhg-image7,
+#nhg-image8,
+#nhg-image9 {
+  max-width: 100%;
+}
+
+.project-description-container {
+  margin: 6vw auto;
+  max-width: 40vw;
+}
+
+.project-description-title {
+  font-size: 2.1vw;
+}
+
+#nhg-image2,
+#nhg-image3,
+#nhg-image4,
+#nhg-image5 {
+  width: 52vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.image-caption {
+  margin: 1vw 0 6vw 0;
+  text-align: center;
+  color: #646464;
+}
+
+.dot-separator {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 6vw;
+}
+
+#partners-portal-header {
+  margin: 5vw auto;
+  text-align: center;
+}
+
+#nhg-image9 {
+  margin-bottom: 4vw;
+}
+
+/* NHG Project end */
+
+/* Footer start */
+footer {
+  background-color: #efebf0;
+  padding: 6vw 0;
+}
+
+#footer-star {
+  width: 3vw;
+  display: block;
+  margin: auto;
+}
+
+.footer-link-group {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  padding: 1.5vw;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #282828;
+}
+
+.footer-link a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer-credit {
+  text-align: center;
+}
+
+#design-credit {
+  margin: 0.5vw 0;
+}
+
+#coding-credit {
+  margin-top: 0.5vw;
+}
+/* Footer end */
