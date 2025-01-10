@@ -29,8 +29,9 @@ h3 {
   font-weight: 300;
 }
 
-p {
-  font-family: "Manrope";
+p,
+.fon-nav {
+  font-family: "Manrope" !important;
   font-size: 1vw;
   line-height: 1.6;
 }
@@ -38,11 +39,13 @@ p {
 /* Navigation bar start */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #fcfcfb;
   color: #1a1925;
   padding: 1.5vw 12vw;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
 }
 
 .nav-left {
@@ -61,6 +64,7 @@ p {
   list-style-type: none;
   display: flex;
   gap: 2.8vw; /* Space between menu items */
+  margin-left: 45vw;
 }
 
 .nav-right li a {
@@ -250,7 +254,7 @@ p {
 #nhg-image7,
 #nhg-image8,
 #nhg-image9 {
-  max-width: 100%;
+  width: 100%;
 }
 
 .project-description-container {
@@ -261,6 +265,8 @@ p {
 .project-description-title {
   font-size: 2.1vw;
   color: #282828;
+  padding-top: 160px; /* Offset for scrolling anchor */
+  margin-top: -160px;
 }
 
 .project-description-text {

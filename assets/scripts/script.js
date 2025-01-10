@@ -1,5 +1,9 @@
 // For animation on scroll
-AOS.init();
+AOS.init({
+  offset: 200, // Adjust this value to tweak when animations start
+  once: true, // Run animations only once
+});
+
 // Wait for document to load
 document.addEventListener("DOMContentLoaded", () => {
   // Smooth scroll to projects
