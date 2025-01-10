@@ -265,8 +265,8 @@ p,
 .project-description-title {
   font-size: 2.1vw;
   color: #282828;
-  padding-top: 160px; /* Offset for scrolling anchor */
-  margin-top: -160px;
+  padding-top: 160px !important; /* Offset for scrolling anchor */
+  margin-top: -160px !important;
 }
 
 .project-description-text {
