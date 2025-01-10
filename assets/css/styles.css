@@ -133,7 +133,7 @@ p,
 }
 /* Banner end */
 
-/* Projects start */
+/* Main page projects start */
 .project-container {
   padding: 3vw 12vw;
 }
@@ -218,17 +218,33 @@ p,
 .read-more-arrow {
   max-width: 1.5vw;
 }
-/* Projects end */
+/* Main page projects end */
 
-/* NHG Project start */
+/* Case studies start */
 
-.nhg-container {
+.nhg-container,
+.capitalview-container {
   padding: 2vw 12vw;
 }
 
-#nhg-title {
-  width: 78vw;
-  margin: 6vw 12vw;
+#project-title-capitalview {
+  width: 85vw;
+}
+
+.project-title {
+  font-size: 3.4vw;
+  margin: 10vw 11.75vw 5vw;
+  width: 60vw;
+}
+
+.project-title-top {
+  color: #282828;
+  margin: 0;
+}
+
+.project-title-bottom {
+  color: #646464;
+  margin: 0;
 }
 
 .project-overview-container {
@@ -253,7 +269,12 @@ p,
 #nhg-image6,
 #nhg-image7,
 #nhg-image8,
-#nhg-image9 {
+#nhg-image9,
+#capitalview-image1,
+#capitalview-image2,
+#capitalview-image3,
+#capitalview-image4,
+#capitalview-image5 {
   width: 100%;
 }
 
@@ -271,6 +292,13 @@ p,
 
 .project-description-text {
   color: #282828;
+}
+
+.project-description-text-bold {
+  color: #282828;
+  font-weight: 1000;
+  margin-bottom: 0;
+  margin-top: 2vw;
 }
 
 #nhg-image2,
@@ -308,7 +336,18 @@ p,
   margin: 0.5vw 0;
 }
 
-/* NHG Project end */
+.underbold {
+  margin-top: 0;
+}
+
+.numbered-list {
+  margin: 0.5vw 0;
+  line-height: 1.1;
+}
+
+/* Case studies end */
+
+/* Capital View Project end */
 
 /* Footer start */
 footer {
