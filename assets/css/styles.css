@@ -13,6 +13,11 @@ body {
   overflow-x: hidden;
 }
 
+ol {
+  margin: 0;
+  padding-left: 1.5vw;
+}
+
 /* Import the custom font */
 @font-face {
   font-family: "Manrope";
@@ -30,7 +35,8 @@ h3 {
 }
 
 p,
-.fon-nav {
+.fon-nav,
+li {
   font-family: "Manrope" !important;
   font-size: 1vw;
   line-height: 1.6;
@@ -93,8 +99,8 @@ p,
   display: inline-flex;
   width: 100%;
   background-color: #f5f0e7;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 8vw;
+  padding-bottom: 4vw;
 }
 
 .banner-left {
@@ -271,10 +277,18 @@ p,
 #nhg-image8,
 #nhg-image9,
 #capitalview-image1,
-#capitalview-image2,
-#capitalview-image3,
 #capitalview-image4,
-#capitalview-image5 {
+#capitalview-image7,
+#capitalview-image8,
+#capitalview-image9,
+#capitalview-image10,
+#capitalview-image11,
+#capitalview-image12,
+#capitalview-image13,
+#nexus-image1,
+#nexus-image3,
+#nexus-image7,
+#nexus-image10 {
   width: 100%;
 }
 
@@ -301,10 +315,24 @@ p,
   margin-top: 2vw;
 }
 
+.bold {
+  font-weight: 1000;
+}
+
 #nhg-image2,
 #nhg-image3,
 #nhg-image4,
-#nhg-image5 {
+#nhg-image5,
+#capitalview-image2,
+#capitalview-image3,
+#capitalview-image5,
+#capitalview-image6,
+#nexus-image2,
+#nexus-image4,
+#nexus-image5,
+#nexus-image6,
+#nexus-image8,
+#nexus-image9 {
   width: 52vw;
   margin: 0 auto;
   display: block;
@@ -323,17 +351,22 @@ p,
   margin-bottom: 6vw;
 }
 
-#partners-portal-header {
+.presenting-header {
   margin: 5vw auto;
   text-align: center;
 }
 
-#nhg-image9 {
+.presenting-img {
   margin-bottom: 4vw;
 }
 
 .bullet-point {
-  margin: 0.5vw 0;
+  margin: 0.5vw 0 0.5vw 0.25vw;
+  line-height: 1.2;
+}
+
+.bolded-bullets {
+  line-height: 1.6;
 }
 
 .underbold {
@@ -345,9 +378,11 @@ p,
   line-height: 1.1;
 }
 
-/* Case studies end */
+.bullet-header {
+  margin-bottom: 0.25vw;
+}
 
-/* Capital View Project end */
+/* Case studies end */
 
 /* Footer start */
 footer {
