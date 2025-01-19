@@ -439,7 +439,7 @@ footer {
 @media only screen and (max-width: 768px) {
   p,
   li {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
   }
   /* Hide Desktop Nav */
   .navbar-desktop {
@@ -478,7 +478,23 @@ footer {
   }
 
   .project-title {
-    margin: 16vw 4vw 5vw;
+    margin: 20vw 4vw 10vw;
+  }
+
+  .project-title-top {
+    color: #282828;
+    margin: 0;
+    font-size: 5.8vw;
+  }
+
+  .project-title-bottom {
+    color: #646464;
+    margin: 0;
+    font-size: 5.8vw;
+  }
+
+  #project-title-nhg {
+    width: 85vw;
   }
 
   .project-overview-container {
@@ -508,9 +524,9 @@ footer {
   }
 
   .project-description-title {
-    font-size: 4.2vw;
-    padding-top: 20px !important;
-    margin-top: -20px !important;
+    font-size: 5.2vw;
+    padding-top: 150px !important;
+    margin-top: -150px !important;
   }
 
   .project-image-container {
