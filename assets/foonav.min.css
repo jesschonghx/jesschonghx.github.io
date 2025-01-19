@@ -408,13 +408,13 @@
   margin-top: 4vw;
 }
 .fon-light .fon-button {
-  color: #616161;
+  color: #646464;
 }
 .fon-light .fon-button:hover {
   color: #000;
 }
 .fon-light .fon-item {
-  color: #616161;
+  color: #646464;
   background-color: #fdfdfd;
 }
 .fon-light .fon-item.fon-active,
@@ -425,7 +425,7 @@
 }
 .fon-light.fon-border,
 .fon-light.fon-border > .fon-buttons {
-  border-color: #616161;
+  border-color: #646464;
 }
 .fon-light.fon-border .fon-item {
   border-color: #dcdcdc;
