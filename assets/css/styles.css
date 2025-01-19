@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ol {
   margin: 0;
   padding-left: 1.5vw;
@@ -43,10 +47,10 @@ li {
 }
 
 /* Navigation bar start */
-.navbar {
+.navbar-desktop {
   display: flex;
   background-color: #fcfcfb;
-  color: #1a1925;
+  color: #282828;
   padding: 1.5vw 12vw;
   position: fixed;
   width: 100%;
@@ -62,7 +66,7 @@ li {
 
 .nav-left a {
   text-decoration: none;
-  color: #1a1925;
+  color: #282828;
   font-size: 1.1vw;
 }
 
@@ -74,7 +78,7 @@ li {
 }
 
 .nav-right li a {
-  color: #1a1925;
+  color: #282828;
   text-decoration: none;
   font-family: "Manrope";
   font-size: 0.9vw;
@@ -165,6 +169,7 @@ li {
   flex-wrap: wrap; /* Allows wrapping for smaller screens */
   gap: 1vw;
   margin: 2.5vw 0;
+  transition: 0.25s ease-in-out;
 }
 
 #nhg-project:hover,
@@ -173,7 +178,6 @@ li {
 #gongcha-project:hover {
   transform: scale(1.01);
   cursor: pointer;
-  transition: 0.25s ease-in-out;
   opacity: 0.9;
 }
 
@@ -229,7 +233,8 @@ li {
 /* Case studies start */
 
 .nhg-container,
-.capitalview-container {
+.capitalview-container,
+.nexus-container {
   padding: 2vw 12vw;
 }
 
@@ -427,3 +432,201 @@ footer {
   margin-top: 0.5vw;
 }
 /* Footer end */
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+  p,
+  li {
+    font-size: 2.2vw;
+  }
+  /* Hide Desktop Nav */
+  .navbar-desktop {
+    display: none;
+  }
+  /* Mobile Nav */
+  .navbar {
+    display: block !important;
+    z-index: 99999;
+    background-color: #fcfcfb;
+  }
+
+  .nav-left-mobile {
+    font-weight: 1000;
+    font-family: "Relmond";
+    text-decoration: none;
+    color: #282828;
+    margin-left: 2vw;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    color: #282828;
+  }
+
+  .nav-link {
+    font-family: "Manrope";
+    margin: 2vw auto;
+  }
+
+  .project-title {
+    margin: 16vw 4vw 5vw;
+  }
+
+  .project-overview-container {
+    display: block;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+  }
+
+  .overview-title {
+    margin-bottom: 1vw;
+  }
+
+  .capitalview-container,
+  .nhg-container,
+  .nexus-container {
+    padding: 2vw 4vw;
+  }
+
+  .overview-description {
+    margin-bottom: 3vw;
+    max-width: 80%;
+  }
+
+  .project-description-container {
+    margin: 8vw auto;
+    max-width: 96vw;
+  }
+
+  .project-description-title {
+    font-size: 3.5vw;
+    padding-top: 20px !important;
+    margin-top: -20px !important;
+  }
+
+  .project-image-container {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+
+  .dot-separator {
+    margin-bottom: 10vw;
+  }
+
+  #nhg-image2,
+  #nhg-image3,
+  #nhg-image4,
+  #nhg-image5,
+  #capitalview-image2,
+  #capitalview-image3,
+  #capitalview-image5,
+  #capitalview-image6,
+  #nexus-image2,
+  #nexus-image4,
+  #nexus-image5,
+  #nexus-image6,
+  #nexus-image8,
+  #nexus-image9 {
+    width: 100%;
+  }
+
+  ol {
+    padding-left: 3vw;
+  }
+
+  .banner {
+    display: block;
+    width: 100%;
+    background-color: #f5f0e7;
+    padding-top: 20vw;
+    padding-bottom: 15vw;
+  }
+
+  #banner-left-image {
+    width: 80vw;
+    position: relative;
+    margin: -5vw;
+  }
+
+  #banner-left-gif {
+    height: 20vw;
+    position: relative;
+    margin-left: -15vw;
+    margin-top: 6vw;
+    z-index: 1;
+  }
+
+  .banner-right {
+    width: 100%;
+    margin: 2vw 8vw;
+  }
+
+  #banner-right-text {
+    max-width: 50vw;
+    word-wrap: break-word;
+  }
+
+  #banner-right-line {
+    width: 40vw;
+  }
+
+  .project-container {
+    padding: 3vw 4vw;
+  }
+
+  #stay-tuned-text {
+    font-size: 4vw;
+    color: #3b3f64;
+    margin-bottom: 4vw;
+  }
+
+  #project-header-text {
+    font-size: 4vw;
+    color: #3b3f64;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
+  }
+
+  #nhg-project,
+  #capitalview-project,
+  #design-project,
+  #gongcha-project {
+    display: block;
+    margin: 3vw 0 10vw 0;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-text-container {
+    background-color: #282828;
+    padding: 3vw;
+    margin: 3vw 0;
+    z-index: 1; /* Ensures it appears above the image */
+    max-width: 100%; /* Make sure it's responsive */
+  }
+
+  .project-text-header {
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom: 1vw;
+  }
+
+  #footer-star {
+    width: 6vw;
+    margin-bottom: 3vw;
+  }
+
+  footer {
+    padding: 10vw 0;
+  }
+}
+/* End mobile view */
