@@ -18,6 +18,10 @@
       crossorigin="anonymous"
     ></script>
     <link href="assets/foonav.min.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/8c9af3becf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar-desktop">
@@ -387,15 +391,17 @@
           sessions were conducted on the various features before arriving at the
           final product.
         </p>
-        <p class="project-description-text bullet-point">
-          • 1st Session → Watchlist and company screener
-        </p>
-        <p class="project-description-text bullet-point">
-          • 2nd Session → Notifications and company view
-        </p>
-        <p class="project-description-text bullet-point">
-          • 3rd Session → Company view, investor view and similar companies view
-        </p>
+        <ul class="bullet-point-container">
+          <li class="project-description-text bullet-point">
+            1st Session → Watchlist and company screener
+          </li>
+          <li class="project-description-text bullet-point">
+            2nd Session → Notifications and company view
+          </li>
+          <li class="project-description-text bullet-point">
+            3rd Session → Company view, investor view and similar companies view
+          </li>
+        </ul>
       </div>
 
       <div
@@ -450,21 +456,22 @@
           accurate, verifiable cap table data for private companies in
           Singapore.
         </p>
-        <p class="project-description-text bullet-header">
+        <p class="project-description-text bullet-header underbold">
           Key outcomes include:
         </p>
-        <p class="project-description-text bullet-point underbold">
-          • Increased Efficiency: Private Equity Specialists can now sort and
-          analyze company &nbsp;&nbsp;&nbsp;&nbsp;data much faster, eliminating
-          the manual process of converting PDF BizFiles into
-          &nbsp;&nbsp;&nbsp;&nbsp;Excel sheets and reducing the risk of human
-          error.
-        </p>
-        <p class="project-description-text bullet-point underbold">
-          • Proactive Alerts: The email notification feature ensures the team
-          stays updated on &nbsp;&nbsp;&nbsp;&nbsp;new filings without needing
-          to manually check the registry, saving time and effort.
-        </p>
+        <ul class="bullet-point-container">
+          <li class="project-description-text bullet-point underbold">
+            Increased Efficiency: Private Equity Specialists can now sort and
+            analyze company data much faster, eliminating the manual process of
+            converting PDF BizFiles into Excel sheets and reducing the risk of
+            human error.
+          </li>
+          <li class="project-description-text bullet-point">
+            Proactive Alerts: The email notification feature ensures the team
+            stays updated on new filings without needing to manually check the
+            registry, saving time and effort.
+          </li>
+        </ul>
       </div>
 
       <div
@@ -507,6 +514,33 @@
         >
           Presenting CapitalView
         </h3>
+        <div class="capitalview-video-container">
+          <video
+            id="capitalview-video1"
+            class="capitalview-videos"
+            src="assets/videos/capitalview_video1.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+          <video
+            id="capitalview-video2"
+            class="capitalview-videos"
+            src="assets/videos/capitalview_video2.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+          <video
+            id="capitalview-video3"
+            class="capitalview-videos"
+            src="assets/videos/capitalview_video3.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+
         <img
           id="capitalview-image13"
           class="presenting-img"
@@ -548,5 +582,27 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Calculate image size of presenting image for video positioning
+      window.addEventListener("resize", updateImageDimensions);
+      window.addEventListener("DOMContentLoaded", updateImageDimensions);
+
+      function updateImageDimensions() {
+        const image = document.getElementById("capitalview-image13");
+        if (image) {
+          const imageWidth = image.offsetWidth;
+          const imageHeight = image.offsetHeight;
+
+          document.documentElement.style.setProperty(
+            "--image-width",
+            `${imageWidth}px`
+          );
+          document.documentElement.style.setProperty(
+            "--image-height",
+            `${imageHeight}px`
+          );
+        }
+      }
+    </script>
   </body>
 </html>

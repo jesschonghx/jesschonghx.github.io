@@ -267,6 +267,10 @@ li {
   margin-bottom: 5vw;
 }
 
+#nhg-bullet-container {
+  margin: 1.75vw 0;
+}
+
 .overview-title {
   font-weight: 600;
   color: #282828;
@@ -368,12 +372,16 @@ li {
 }
 
 .bullet-point {
-  margin: 0.5vw 0 0.5vw 0.25vw;
+  margin: 0.5vw 0 0.5vw 1.5vw;
   line-height: 1.2;
 }
 
+.bullet-point-container li::marker {
+  content: "• ";
+}
+
 .bolded-bullets {
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .underbold {
@@ -387,6 +395,46 @@ li {
 
 .bullet-header {
   margin-bottom: 0.25vw;
+}
+
+.presenting-container {
+  position: relative;
+  width: 100%;
+}
+
+.capitalview-video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.capitalview-videos {
+  position: absolute;
+  z-index: 2;
+  width: calc(
+    var(--image-width) * 0.55
+  ); /* Video size relative to image width */
+}
+
+#capitalview-video1 {
+  top: calc(var(--image-height) * 0.31); /* Adjust based on desired placement */
+  left: calc(var(--image-width) * 0.02);
+}
+
+#capitalview-video2 {
+  top: calc(var(--image-height) * 0.425);
+  left: calc(var(--image-width) * 0.42);
+}
+
+#capitalview-video3 {
+  top: calc(var(--image-height) * 0.54);
+  right: calc(var(--image-width) * 0.425);
+}
+
+/* CSS Custom Properties Setup */
+:root {
+  --image-width: 0px;
+  --image-height: 0px;
 }
 
 /* Case studies end */
@@ -633,7 +681,7 @@ footer {
   }
 
   .project-text-header {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-top: 0;
     margin-bottom: 1vw;
   }

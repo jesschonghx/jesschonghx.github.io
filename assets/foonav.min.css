@@ -309,6 +309,12 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: fontawesome;
+  src: url(fontawesome/fontawesome-free-6.7.2-desktop/otfs/Font\ Awesome\ 6\ Free-Solid-900.otf)
+    format("otf");
+}
 .fon-icon {
   font-family: foonav;
   text-transform: none;
@@ -317,7 +323,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .fon-icon-menu:before {
-  content: "\e2af";
+  font-family: fontawesome;
+  content: "\f0c9";
+  color: #646464;
 }
 .fon-icon-expand:before {
   content: "\e376";
@@ -326,8 +334,11 @@
   content: "\e3bf";
 }
 .fon-icon-top:before {
-  content: "\e3b9";
+  font-family: fontawesome;
+  content: "\f062";
+  color: #646464;
 }
+
 .fon-icon-home:before {
   content: "\e002";
 }
