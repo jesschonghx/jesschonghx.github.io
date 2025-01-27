@@ -5,7 +5,7 @@ AOS.init({
 // Navigation Pane
 FooNav.init({
   classes: "fon-full-height fon-rounded", // Any additional classes to add to FooNav
-  items: "body", // The selector where FooNav looks for the header elements
+  items: { container: "body", exclude: ".project-title-bottom" }, // The selector where FooNav looks for the header elements
   position: "fon-top-right", // The position in the viewport
   theme: "fon-light", // The theme to use
 });
