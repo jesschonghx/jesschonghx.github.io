@@ -25,11 +25,19 @@ ol {
 /* Import the custom font */
 @font-face {
   font-family: "Manrope";
+  font-weight: 400;
   src: url("../fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
 }
 
 @font-face {
+  font-family: "Manrope";
+  font-weight: 700;
+  src: url("../fonts/Manrope/static/Manrope-Bold.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Relmond";
+  font-weight: 400;
   src: url("../fonts/Relmond/Relmond.ttf") format("truetype");
 }
 
@@ -333,6 +341,7 @@ li {
   font-weight: 900;
 }
 
+#nhg_JTBD,
 #nhg-image2,
 #nhg-image3,
 #nhg-image4,
