@@ -25,11 +25,19 @@ ol {
 /* Import the custom font */
 @font-face {
   font-family: "Manrope";
+  font-weight: 400;
   src: url("../fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
 }
 
 @font-face {
+  font-family: "Manrope";
+  font-weight: 700;
+  src: url("../fonts/Manrope/static/Manrope-Bold.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Relmond";
+  font-weight: 400;
   src: url("../fonts/Relmond/Relmond.ttf") format("truetype");
 }
 
@@ -237,6 +245,7 @@ li {
 .capitalview-container,
 .nexus-container {
   padding: 2vw 12vw;
+  margin: 0 auto;
 }
 
 #project-title-capitalview {
@@ -296,10 +305,77 @@ li {
 #capitalview-image11,
 #capitalview-image12,
 #capitalview-image13,
+#capitalview_Watchlist_iteration,
+#capitalview_notification_iteration,
+#capitalview_shareholder_iteration,
 #nexus-image1,
 #nexus-image3,
 #nexus-image7,
 #nexus-image10 {
+  width: 100%;
+}
+
+.presenting-capitalview-container {
+  background-color: #eeecf8;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.presenting-capitalview-container .section {
+  position: relative;
+  z-index: 10;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.presenting-capitalview-container .section:first-child {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.presenting-capitalview-container .section:nth-child(5) {
+  margin-bottom: 0px !important;
+}
+
+.presenting-capitalview-container .section img {
+  background-image: white;
+  width: 100%;
+}
+
+.presenting-capitalview-container .section video {
+  width: 100%;
+}
+
+.presenting-capitalview-container .section:first-child > img {
+  width: 100%;
+}
+
+.capitalview-video-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.capitalview-video-container > img {
+  width: 40% !important;
+}
+
+.capitalview-video-container > video {
+  width: 45% !important;
+}
+
+.capitalview-image-backdrop {
+  z-index: 0;
+  position: relative;
+  height: 100vw;
+}
+
+.capitalview-image-backdrop > img {
+  position: absolute;
+  top: -100px;
   width: 100%;
 }
 
@@ -330,6 +406,7 @@ li {
   font-weight: 900;
 }
 
+#nhg_JTBD,
 #nhg-image2,
 #nhg-image3,
 #nhg-image4,
@@ -402,11 +479,11 @@ li {
   width: 100%;
 }
 
-.capitalview-video-container {
+/* .capitalview-video-container {
   position: relative;
   width: 100%;
   height: auto;
-}
+} */
 
 .capitalview-videos {
   position: absolute;
