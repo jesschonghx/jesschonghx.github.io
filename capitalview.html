@@ -605,7 +605,100 @@
         >
           Presenting CapitalView
         </h3>
-        <div class="capitalview-video-container">
+        <div class="presenting-capitalview-container">
+          <div class="section">
+            <img id="capitalview-imagetop" src="assets/images/capitalview_image13_1.svg" />
+          </div>
+          <div class="section">
+            <img src="assets/images/capitalview_image14.svg" />
+          </div>
+          <div class="section">
+            <div class="capitalview-video-container">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                  onloadedmetadata="this.muted = true"
+                >
+                  <source
+                    src="assets/videos/capitalview_video1.mp4"
+                    type="video/mp4"
+                  />
+                  <img
+                    src="assets/images/capitalview_image15_1.svg"
+                    alt="CapitalView Image"
+                  />
+                </video>
+                <img
+                  src="assets/images/capitalview_image15_2.svg"
+                  alt="CapitalView Image"
+                />
+            </div>
+          </div>
+          <div class="section">
+            <div class="capitalview-video-container">
+              <img
+                src="assets/images/capitalview_image16_2.svg"
+                alt="CapitalView Image"
+              />
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                onloadedmetadata="this.muted = true"
+              >
+                <source
+                  src="assets/videos/capitalview_video2.mp4"
+                  type="video/mp4"
+                />
+                <img
+                  src="assets/images/capitalview_image16_1.svg"
+                  alt="CapitalView Image"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="section">
+            <div class="capitalview-video-container">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                onloadedmetadata="this.muted = true"
+              >
+                <source
+                  src="assets/videos/capitalview_video3.mp4"
+                  type="video/mp4"
+                />
+                <img
+                  src="assets/images/capitalview_image17_1.svg"
+                  alt="CapitalView Image"
+                />
+              </video>
+              <img
+              src="assets/images/capitalview_image17_2.svg"
+              alt="CapitalView Image"
+            />
+            </div>
+          </div>
+          <div class="capitalview-image-backdrop">
+            <img
+            src="assets/images/capitalview_image18.svg"
+            alt="CapitalView Backdrop Image"
+           
+            />
+          </div>
+        </div>
+        </div>
+        
+
+        <!-- <div class="capitalview-video-container">
           <video
             id="capitalview-video1"
             class="capitalview-videos"
@@ -630,13 +723,7 @@
             loop
             muted
           ></video>
-        </div>
-
-        <img
-          id="capitalview-image13"
-          class="presenting-img"
-          src="assets/images/capitalview_image13.svg"
-        />
+        </div> -->
       </div>
     </div>
 
@@ -675,25 +762,25 @@
     ></script>
     <script>
       // Calculate image size of presenting image for video positioning
-      window.addEventListener("resize", updateImageDimensions);
-      window.addEventListener("DOMContentLoaded", updateImageDimensions);
+      // window.addEventListener("resize", updateImageDimensions);
+      // window.addEventListener("DOMContentLoaded", updateImageDimensions);
 
-      function updateImageDimensions() {
-        const image = document.getElementById("capitalview-image13");
-        if (image) {
-          const imageWidth = image.offsetWidth;
-          const imageHeight = image.offsetHeight;
+      // function updateImageDimensions() {
+      //   const image = document.getElementById("capitalview-image13");
+      //   if (image) {
+      //     const imageWidth = image.offsetWidth;
+      //     const imageHeight = image.offsetHeight;
 
-          document.documentElement.style.setProperty(
-            "--image-width",
-            `${imageWidth}px`
-          );
-          document.documentElement.style.setProperty(
-            "--image-height",
-            `${imageHeight}px`
-          );
-        }
-      }
+      //     document.documentElement.style.setProperty(
+      //       "--image-width",
+      //       `${imageWidth}px`
+      //     );
+      //     document.documentElement.style.setProperty(
+      //       "--image-height",
+      //       `${imageHeight}px`
+      //     );
+      //   }
+      // }
     </script>
   </body>
 </html>
