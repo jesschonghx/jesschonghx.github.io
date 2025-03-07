@@ -589,6 +589,11 @@ footer {
     margin-left: 2vw;
   }
 
+  .nav-left-mobile a:hover {
+    cursor: pointer;
+    text-shadow: none;
+  }
+
   .navbar-toggler:focus {
     box-shadow: none;
   }
@@ -613,6 +618,7 @@ footer {
   .project-title-top {
     color: #282828;
     margin: 0;
+    font-size: 2.8em;
   }
 
   .project-title-bottom {
@@ -759,6 +765,7 @@ footer {
   .project-text-header {
     margin-top: 0;
     margin-bottom: 1vw;
+    font-size: 2.1em;
   }
 
   .read-more-arrow {
