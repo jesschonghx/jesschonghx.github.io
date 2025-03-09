@@ -55,7 +55,7 @@ p,
 .fon-nav,
 li {
   font-family: "Manrope" !important;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -64,7 +64,7 @@ li {
   display: flex;
   background-color: #fcfcfb;
   color: #282828;
-  padding: 1.5vw 12vw;
+  padding: 1.5rem 12rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -78,7 +78,7 @@ li {
 .nav-left a {
   text-decoration: none;
   color: #282828;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 900;
 }
 
@@ -93,7 +93,7 @@ li {
   color: #282828;
   text-decoration: none;
   font-family: "Manrope";
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   /* transition: all 300ms ease-in; */
   padding: 0.4vw;
@@ -618,12 +618,13 @@ footer {
   .project-title-top {
     color: #282828;
     margin: 0;
-    font-size: 2.8em;
+    font-size: 2.8rem;
   }
 
   .project-title-bottom {
     color: #646464;
     margin: 0;
+    font-size: 2.8rem;
   }
 
   #project-title-nhg {
@@ -688,7 +689,11 @@ footer {
   }
 
   ol {
-    padding-left: 3vw;
+    padding-left: 1.2rem;
+  }
+
+  ul {
+    padding-left: 0.5rem;
   }
 
   .banner {
