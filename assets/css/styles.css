@@ -55,7 +55,7 @@ p,
 .fon-nav,
 li {
   font-family: "Manrope" !important;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
 }
 
@@ -618,13 +618,13 @@ footer {
   .project-title-top {
     color: #282828;
     margin: 0;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .project-title-bottom {
     color: #646464;
     margin: 0;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   #project-title-nhg {
