@@ -50,7 +50,7 @@ p,
 .fon-nav,
 li {
   font-family: "Manrope" !important;
-  font-size: 1vw;
+  font-size: 1.1vw;
   line-height: 1.6;
 }
 
@@ -67,7 +67,7 @@ li {
 }
 
 .nav-left {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   font-weight: 1000;
   font-family: "Relmond";
 }
