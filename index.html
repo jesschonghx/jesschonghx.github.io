@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,206 +11,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="icon" href="assets/images/favicon2.svg" type="image/x-icon" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/8c9af3becf.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="top"></div>
-    <nav class="navbar-desktop">
-      <div class="nav-left"><a href="#top">JESSCHONG</a></div>
-      <ul class="nav-right">
-        <li><a id="work-link" href="#work">WORK</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
-            >LINKEDIN</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://drive.google.com/file/d/1N-WhVJIsJz8Y2moicAVMIaIguSxVhiVQ/view"
-            target="_blank"
-            >RESUME</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Mobile nav -->
-    <nav class="navbar fixed-top" style="display: none">
-      <div class="container-fluid">
-        <a class="nav-left-mobile" href="index.html">JESSCHONG</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="index.html#work">WORK</a>
-            <a
-              class="nav-link"
-              href="https://www.linkedin.com/in/jessicachonghx/"
-              target="_blank"
-              >LINKEDIN</a
-            >
-            <a
-              class="nav-link"
-              href="https://drive.google.com/file/d/1N-WhVJIsJz8Y2moicAVMIaIguSxVhiVQ/view"
-              target="_blank"
-              >RESUME</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Banner  -->
-    <div class="banner">
-      <div class="banner-left">
-        <img id="banner-left-image" src="assets/images/banner_left_image.svg" />
-        <img id="banner-left-gif" src="assets/images/flower.gif" />
-      </div>
-      <div class="banner-right">
-        <p id="banner-right-text">
-          A nature-loving UI/UX designer who loves crafting beautiful and
-          meaningful things.
-        </p>
-        <img id="banner-right-line" src="assets/images/banner_right_line.svg" />
-      </div>
-    </div>
-    <!-- Projects -->
-    <div class="project-container">
-      <!-- work navigation bar links here -->
-      <div id="work"></div>
-      <h3 id="project-header-text">Freshly potted works...</h3>
-      <!-- Design Revamp Project -->
-      <div
-        id="design-project"
-        class="project"
-        data-aos="fade-up"
-        data-aos-duration="750"
-      >
-        <img class="project-image" src="assets/images/main_design_revamp.png" />
-        <div class="project-text-container">
-          <h3 class="project-text-header">Design System Revamp</h3>
-          <p class="project-text">
-            The growth of the product from Dashboard to Nexus presented the
-            perfect opportunity to overhaul the existing MVP-focused design
-            system.
-          </p>
-          <div class="project-read-more">
-            <p class="read-more-text">Read More</p>
-            <img
-              class="read-more-arrow"
-              src="assets/images/read_more_arrow.svg"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- CapitalView Project -->
-      <div id="capitalview-project" class="project">
-        <img class="project-image" src="assets/images/main_capital_view2.png" />
-        <div class="project-text-container">
-          <h3 class="project-text-header">CapitalView</h3>
-          <p class="project-text">
-            Partnered with UBS, conducted interviews, with design thinking
-            methodologies guiding the process. Improved turnover time for the
-            UBS team when searching for accurate, cap table data for private
-            companies in Singapore.
-          </p>
-          <div class="project-read-more">
-            <p class="read-more-text">Read More</p>
-            <img
-              class="read-more-arrow"
-              src="assets/images/read_more_arrow.svg"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- NHG Project -->
-      <div
-        id="nhg-project"
-        class="project"
-        data-aos="fade-up"
-        data-aos-duration="750"
-      >
-        <img class="project-image" src="assets/images/main_nhg.png" />
-        <div class="project-text-container">
-          <h3 class="project-text-header">NHG Cares Partners Portal</h3>
-          <p class="project-text">
-            Gathered feedback and requirements, designed and launched in 4
-            months. The portal has onboarded 22 community partners and automate
-            about 1,200 programmes across 100 sites in Central and North
-            Singapore.
-          </p>
-          <div class="project-read-more">
-            <p class="read-more-text">Read More</p>
-            <img
-              class="read-more-arrow"
-              src="assets/images/read_more_arrow.svg"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- Gongcha Project -->
-      <div
-        id="gongcha-project"
-        class="project"
-        data-aos="fade-up"
-        data-aos-duration="750"
-      >
-        <img class="project-image" src="assets/images/main_gongcha.png" />
-        <div class="project-text-container">
-          <h3 class="project-text-header">Gongcha App Revamp</h3>
-          <p class="project-text">
-            First UI/UX project on re-designing the Gongcha app.
-          </p>
-          <div class="project-read-more">
-            <p class="read-more-text">Read More</p>
-            <img
-              class="read-more-arrow"
-              src="assets/images/read_more_arrow.svg"
-            />
-          </div>
-        </div>
-      </div>
-
-      <h3 id="stay-tuned-text">Stay tuned for more case studies...</h3>
-    </div>
-
-    <footer>
-      <img id="footer-star" src="assets/images/footer_star.svg" />
-      <div class="footer-link-group">
-        <p id="footer-email" class="footer-link">
-          <a href="mailto:jessicachong.8@gmail.com">EMAIL</a>
-        </p>
-        <p id="footer-linkedin" class="footer-link">
-          <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
-            >LINKEDIN</a
-          >
-        </p>
-        <p id="footer-resume" class="footer-link">
-          <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
-            target="_blank"
-            >RESUME</a
-          >
-        </p>
-      </div>
-      <div class="footer-credit">
-        <p id="design-credit">Website designed by me</p>
-        <p id="coding-credit">Coded by Brian Chong</p>
-      </div>
-    </footer>
-    <!-- Import scripts -->
-    <script src="assets/scripts/aos.js"></script>
-    <script src="assets/scripts/script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
