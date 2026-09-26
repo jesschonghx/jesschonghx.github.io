@@ -1,0 +1,108 @@
+import React, { useEffect, useMemo } from "react";
+import { createRoot } from "react-dom/client";
+import { pages } from "./pageContent";
+import "./index.css";
+
+const projectLinks = {
+  "gongcha-project":
+    "https://www.behance.net/gallery/125676387/OrderCollectBeat-the-crowd-Redesigning-Gong-cha-app",
+  "nhg-project": "nhg.html",
+  "capitalview-project": "capitalview.html",
+  "design-project": "nexus.html",
+};
+
+function loadScript(src) {
+  const existingScript = document.querySelector(`script[src="${src}"]`);
+  if (existingScript) return Promise.resolve();
+
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.body.appendChild(script);
+  });
+}
+
+function loadStylesheet(href) {
+  const existingStylesheet = document.querySelector(`link[href="${href}"]`);
+  if (existingStylesheet) return Promise.resolve();
+
+  return new Promise((resolve, reject) => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    link.onload = resolve;
+    link.onerror = reject;
+    document.head.appendChild(link);
+  });
+}
+
+function getPageKey() {
+  const page = window.location.pathname.split("/").pop();
+
+  if (page === "capitalview.html") return "capitalview";
+  if (page === "nhg.html") return "nhg";
+  if (page === "nexus.html") return "nexus";
+
+  return "home";
+}
+
+async function initPagePlugins(pageKey) {
+  await loadScript("assets/scripts/aos.js");
+  window.AOS?.init?.({ once: true });
+
+  if (pageKey !== "home") {
+    await loadStylesheet("assets/foonav.min.css");
+    await loadScript("assets/scripts/foonav.min.js");
+    document.querySelectorAll(".fon-nav").forEach((element) => element.remove());
+    window.FooNav?.init?.({
+      classes: "fon-full-height fon-rounded",
+      items: { container: "body", exclude: ".project-title-bottom" },
+      position: "fon-top-right",
+      theme: "fon-light",
+    });
+  }
+}
+
+function App() {
+  const pageKey = useMemo(getPageKey, []);
+  const html = pages[pageKey] ?? pages.home;
+
+  useEffect(() => {
+    const handleClick = (event) => {
+      const anchor = event.target.closest('a[href^="#"]');
+      if (anchor) {
+        const target = document.querySelector(anchor.getAttribute("href"));
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      const project = event.target.closest("[id]");
+      if (project && projectLinks[project.id]) {
+        if (project.id === "gongcha-project") {
+          window.open(projectLinks[project.id], "_blank", "noopener,noreferrer");
+        } else {
+          window.location.href = projectLinks[project.id];
+        }
+      }
+    };
+
+    window.ondragstart = () => false;
+    document.addEventListener("click", handleClick);
+    initPagePlugins(pageKey).catch((error) => {
+      console.error("Unable to initialize page plugins", error);
+    });
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+      window.ondragstart = null;
+    };
+  }, [pageKey]);
+
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+createRoot(document.getElementById("root")).render(<App />);
