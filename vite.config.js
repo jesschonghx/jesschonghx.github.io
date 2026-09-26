@@ -23,6 +23,7 @@ export default defineConfig({
     },
   },
   build: {
+    assetsDir: "_vite",
     rollupOptions: {
       input: {
         main: "index.html",
