@@ -104,6 +104,7 @@ export const pages = {
               class="read-more-arrow"
               src="assets/images/read_more_arrow.svg"
             />
+            <p class="wip-text">(Work in progress)</p>
           </div>
         </div>
       </div>

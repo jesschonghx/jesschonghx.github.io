@@ -247,6 +247,13 @@ li {
 .read-more-arrow {
   max-width: 1.5vw;
 }
+
+.wip-text {
+  color: #f5f0e7;
+  opacity: 0.75;
+  font-size: 0.85rem;
+  margin: 0 0 0 0.6vw;
+}
 /* Main page projects end */
 
 /* Case studies start */
