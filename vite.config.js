@@ -30,6 +30,7 @@ export default defineConfig({
         capitalview: "capitalview.html",
         nhg: "nhg.html",
         nexus: "nexus.html",
+        workshop: "workshop.html",
       },
     },
   },

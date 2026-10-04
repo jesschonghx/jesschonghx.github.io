@@ -62,13 +62,15 @@ export const pages = {
       </div>
       <div class="banner-right">
         <p id="banner-right-text">
-          I design B2B and B2C products across healthcare, insurance and SaaS,
-          combining research, product thinking and AI-assisted development to
-          turn ideas into testable experiences.
+          I'm a product designer well versed in AI tools. I design B2B and B2C
+          products across healthcare, insurance and SaaS, pairing research
+          and product thinking with AI-assisted workflows to turn ideas into
+          testable experiences.
         </p>
         <div class="banner-tags" aria-label="Core skills">
           <span class="banner-tag">Product Design</span>
-          <span class="banner-tag">AI Prototyping</span>
+          <span class="banner-tag">Claude Code</span>
+          <span class="banner-tag">Codex</span>
           <span class="banner-tag">UX Research</span>
           <span class="banner-tag">Design Systems</span>
         </div>
@@ -80,6 +82,31 @@ export const pages = {
       <!-- work navigation bar links here -->
       <div id="work"></div>
       <h3 id="project-header-text">Freshly potted works...</h3>
+      <!-- Renewal Pricing Discovery Workshop Project -->
+      <div
+        id="workshop-project"
+        class="project"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <img class="project-image" src="assets/images/main_workshop.svg" />
+        <div class="project-text-container">
+          <h3 class="project-text-header">Renewal Pricing Discovery Workshop</h3>
+          <p class="project-text">
+            Facilitated a discovery workshop with AIA's local business units
+            across Singapore, Malaysia, Hong Kong, Thailand and Group
+            Corporate Solutions to map the corporate insurance pricing
+            renewal process and co-design one ideal workflow.
+          </p>
+          <div class="project-read-more">
+            <p class="read-more-text">Read More</p>
+            <img
+              class="read-more-arrow"
+              src="assets/images/read_more_arrow.svg"
+            />
+          </div>
+        </div>
+      </div>
       <!-- Design Revamp Project -->
       <div
         id="design-project"
@@ -1694,5 +1721,478 @@ export const pages = {
         <p id="design-credit">Website designed by me</p>
         <p id="coding-credit">Coded by Brian Chong</p>
       </div>
+    </footer>`,
+  "workshop": `<nav class="navbar-desktop">
+      <div class="nav-left"><a href="index.html">JESSCHONG</a></div>
+      <ul class="nav-right">
+        <li><a id="work-link" href="index.html#work">WORK</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
+            >LINKEDIN</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            target="_blank"
+            >RESUME</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav class="navbar fixed-top" style="display: none">
+      <div class="container-fluid">
+        <a class="nav-left-mobile" href="index.html">JESSCHONG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html#work">WORK</a>
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/jessicachonghx/"
+              target="_blank"
+              >LINKEDIN</a
+            >
+            <a
+              class="nav-link"
+              href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+              target="_blank"
+              >RESUME</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="project-title" id="project-title-workshop">
+      <h3 class="project-title-top">Renewal Pricing Discovery Workshop</h3>
+      <h3 class="project-title-bottom">
+        Aligning AIA's local business units on one ideal workflow
+      </h3>
+    </div>
+
+    <!-- TODO: add assets/images/workshop_image1.svg and uncomment the hero image
+    <img id="workshop-image1" src="assets/images/workshop_image1.svg" />
+    -->
+
+    <div class="workshop-container">
+      <div class="project-overview-container">
+        <div
+          class="project-overview-section"
+          data-aos="fade-in"
+          data-aos-duration="750"
+        >
+          <p class="overview-title">Project</p>
+          <p class="overview-description">
+            Discovery Workshop, Design Thinking, On-site
+          </p>
+        </div>
+        <div
+          class="project-overview-section"
+          data-aos="fade-in"
+          data-aos-duration="750"
+          data-aos-delay="500"
+        >
+          <p class="overview-title">Key Activities</p>
+          <p class="overview-description">
+            Survey Design & Analysis, 1:1 Interviews, Workshop Facilitation,
+            Card Sorting, Journey Mapping, Research Synthesis
+          </p>
+        </div>
+        <div
+          class="project-overview-section"
+          data-aos="fade-in"
+          data-aos-duration="750"
+          data-aos-delay="1000"
+        >
+          <p class="overview-title">Duration</p>
+          <p class="overview-description">Jul 2026 · Pre-work + 1-day workshop</p>
+        </div>
+      </div>
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">About</h3>
+        <p class="project-description-text">
+          AIA's local business units — Singapore, Malaysia, Hong Kong,
+          Thailand and Group Corporate Solutions (GCS) — each price
+          corporate insurance renewals in their own way. I was one of the
+          facilitators of a discovery workshop that brought all five
+          markets together in our office to understand the renewal pricing
+          process, from the moment a renewal kicks off to the delivery of
+          a pricing renewal indication to Sales, clients or management
+          reporting.
+        </p>
+        <p class="project-description-text">
+          The workshop set out to understand each market's current process
+          versus their ideal workflow for a corporate insurance pricing
+          product, with participants actively involved in shaping that
+          ideal before the next phase of the product is scoped.
+        </p>
+      </div>
+
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">Starting with Pre-work</h3>
+        <p class="project-description-text">
+          Before the workshop day, we ran two rounds of pre-work so the
+          time together could focus on discussion and co-design rather
+          than discovery from zero.
+        </p>
+        <p class="project-description-text-bold">Market questionnaire</p>
+        <p class="project-description-text underbold">
+          Each business unit completed a survey covering how renewal
+          pricing runs in their market — their tools, data sources, pricing
+          methods, approvals and hand-offs.
+        </p>
+        <p class="project-description-text-bold">One-to-one sessions</p>
+        <p class="project-description-text underbold">
+          We then held a 1:1 session with each business unit to clarify
+          their responses, surface pain points and prepare focused
+          material for the workshop day.
+        </p>
+      </div>
+
+      <!-- TODO: add assets/images/workshop_image2.svg and uncomment
+      <div class="project-image-container" data-aos="fade-up" data-aos-duration="750">
+        <img id="workshop-image2" src="assets/images/workshop_image2.svg" />
+        <p class="image-caption">Questionnaire and 1:1 session notes</p>
+      </div>
+      -->
+
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">The Workshop Day</h3>
+        <p class="project-description-text">
+          Participants from all five markets flew in for a full-day,
+          on-site workshop. The day moved through three activities:
+        </p>
+        <ul class="bullet-point-container">
+          <li class="project-description-text bullet-point underbold">
+            Current-state sharing. Each market walked through how renewal
+            pricing runs today — when it kickstarts, the data they gather,
+            how the price is calculated and how the final indication
+            reaches Sales, clients and management reporting.
+          </li>
+          <li class="project-description-text bullet-point">
+            Card sorting. Participants sorted 18 pricing inputs — from
+            claims cost per member per month to medical trend adjustment —
+            into must-have, good-to-have and not required, revealing what
+            every market needs versus where contexts differ.
+          </li>
+          <li class="project-description-text bullet-point">
+            Ideal-workflow co-design. Each market mapped their ideal
+            renewal journey, actively shaping how the product should
+            support them from the first renewal signal to confirmed terms.
+          </li>
+        </ul>
+        <p class="project-description-text">
+          I facilitated the Malaysia underwriters through the
+          current-versus-ideal mapping, and later consolidated all five
+          markets into the research synthesis.
+        </p>
+      </div>
+
+      <!-- TODO: add assets/images/workshop_image3.svg and uncomment
+      <div class="project-image-container" data-aos="fade-up" data-aos-duration="750">
+        <img id="workshop-image3" src="assets/images/workshop_image3.svg" />
+        <p class="image-caption">North Star boards from the five markets</p>
+      </div>
+      -->
+
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">What Markets Told Us</h3>
+        <p class="project-description-text">
+          Each market faces similar renewal challenges, but their tools,
+          data, pricing methods and decision processes differ.
+        </p>
+        <p class="project-description-text-bold">Singapore</p>
+        <p class="project-description-text underbold">
+          Clients may request 20–30 customised benefit variations with no
+          standard template, making options hard to compare and track;
+          data lives across SQL, benefit schedules and Excel trackers with
+          no single source of truth.
+        </p>
+        <p class="project-description-text-bold">Thailand</p>
+        <p class="project-description-text underbold">
+          First-year renewals lack sufficient claims history to calculate
+          the inflation trend reliably, and Sales struggles to explain
+          premium changes to clients.
+        </p>
+        <p class="project-description-text-bold">Malaysia</p>
+        <p class="project-description-text underbold">
+          Data extraction is manual and error-prone, proposal preparation
+          causes multi-day client delays, and premium and margin data is
+          re-keyed into the approval system after pricing.
+        </p>
+        <p class="project-description-text-bold">Hong Kong</p>
+        <p class="project-description-text underbold">
+          Pricing cannot always see product or benefit changes made by
+          Operations until a case has been priced incorrectly, and routine
+          renewals still consume significant specialist time.
+        </p>
+        <p class="project-description-text-bold">Group Corporate Solutions</p>
+        <p class="project-description-text underbold">
+          Different methods, definitions and assumptions make cross-market
+          submissions hard to compare, and assumptions and rationale stay
+          with individual analysts, making past decisions hard to follow.
+        </p>
+      </div>
+
+      <!-- TODO: add assets/images/workshop_image4.svg and uncomment
+      <div class="project-image-container" data-aos="fade-up" data-aos-duration="750">
+        <img id="workshop-image4" src="assets/images/workshop_image4.svg" />
+        <p class="image-caption">Pain points by market</p>
+      </div>
+      -->
+
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">Cross-Market Themes</h3>
+        <p class="project-description-text">
+          Synthesising the five markets surfaced eight problems that appear
+          everywhere, grouped by the four steps of the core pricing flow
+          rather than by market.
+        </p>
+        <p class="project-description-text-bold">Understand</p>
+        <p class="project-description-text underbold">
+          Teams lack early visibility to plan and prioritise renewals;
+          renewal cases need different levels of support; renewal data is
+          fragmented, incomplete and difficult to assemble; disconnected
+          tools and hand-offs create repeated entry and errors.
+        </p>
+        <p class="project-description-text-bold">Analyse</p>
+        <p class="project-description-text underbold">
+          Pricing methods, assumptions and decisions are hard to follow;
+          benefit changes and negotiation loops create repeated pricing
+          work.
+        </p>
+        <p class="project-description-text-bold">Decide</p>
+        <p class="project-description-text underbold">
+          The move from the technical indication to the final commercial
+          position is not always explicit.
+        </p>
+        <p class="project-description-text-bold">Deliver</p>
+        <p class="project-description-text underbold">
+          Each audience — technical reviewers, GCS, approvers, Sales,
+          brokers, clients and Operations — needs a different explanation
+          and output.
+        </p>
+      </div>
+
+      <!-- TODO: add assets/images/workshop_image5.svg and uncomment
+      <div class="project-image-container" data-aos="fade-up" data-aos-duration="750">
+        <img id="workshop-image5" src="assets/images/workshop_image5.svg" />
+        <p class="image-caption">The eight themes grouped by the core pricing flow</p>
+      </div>
+      -->
+
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">One Ideal Workflow</h3>
+        <p class="project-description-text">
+          The centrepiece of the synthesis was a converged customer journey
+          that brought the five ideal-workflow maps into one shared view —
+          without assuming every market works the same way.
+        </p>
+        <ol>
+          <li class="underbold">
+            Start &amp; prioritise — know which renewals need attention,
+            when to start and who owns the case
+          </li>
+          <li>
+            Gather &amp; understand — build a trusted view of the case and
+            confirm it is ready to price
+          </li>
+          <li>
+            Analyse &amp; model — find a defensible technical price and
+            compare the options
+          </li>
+          <li>
+            Decide &amp; approve — agree the position to release and secure
+            the right approval
+          </li>
+          <li>
+            Prepare &amp; share — give each audience a clear explanation of
+            the approved position
+          </li>
+          <li>
+            Negotiate &amp; finalise — respond to feedback without losing
+            the decision history, then release confirmed terms
+          </li>
+        </ol>
+        <p class="project-description-text">
+          Three personas carry the renewal through: Actuarial/Pricing, who
+          owns the method and asks what the risk should cost; the
+          Underwriter, who owns the renewal and decides the terms; and the
+          Sales and relationship team, who own the client relationship and
+          the commercial position.
+        </p>
+      </div>
+
+      <!-- TODO: add assets/images/workshop_image6.svg and uncomment
+      <div class="project-image-container" data-aos="fade-up" data-aos-duration="750">
+        <img id="workshop-image6" src="assets/images/workshop_image6.svg" />
+        <p class="image-caption">Converged renewal customer journey</p>
+      </div>
+      -->
+
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">Outcomes</h3>
+        <p class="project-description-text">
+          The workshop gave the product team a validated, cross-market
+          foundation for the next phase.
+        </p>
+        <ul class="bullet-point-container">
+          <li class="project-description-text bullet-point underbold">
+            Universal must-haves identified. Claims cost per member per
+            month (PMPM), claims utilisation rate and medical trend
+            adjustment were ranked must-have by every participant in the
+            card sort.
+          </li>
+          <li class="project-description-text bullet-point">
+            Eight shared opportunities. Covering all eight problem themes —
+            from proactive renewal reminders and a prioritised renewal
+            queue to versioned pricing scenarios and audience-ready outputs
+            generated from one approved decision.
+          </li>
+          <li class="project-description-text bullet-point">
+            A recommendation for the next phase. Focus on a pricing
+            workspace with a clear decision history — bringing the case
+            summary, pricing scenarios, decisions and final outputs into
+            one place so users can see the evidence, compare changes,
+            follow how the final position was reached and share the result
+            without rebuilding the work.
+          </li>
+        </ul>
+        <p class="project-description-text">
+          I consolidated the research into a synthesis report that grouped
+          the findings into the cross-market themes, the converged ideal
+          workflow and the recommendations the team needed to scope the
+          next phase.
+        </p>
+      </div>
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">Learnings</h3>
+        <p class="project-description-text">
+          Facilitating research across five markets taught me a few things.
+        </p>
+        <p class="project-description-text-bold">Pre-work pays off</p>
+        <p class="project-description-text underbold">
+          The questionnaire and 1:1 sessions meant the workshop day could
+          focus on discussion and co-design rather than discovery from
+          zero.
+        </p>
+        <p class="project-description-text-bold">Local context matters</p>
+        <p class="project-description-text underbold">
+          The same renewal process looks different in every market — a
+          shared product experience has to support professional judgement
+          rather than replace it.
+        </p>
+        <p class="project-description-text-bold">Co-design creates ownership</p>
+        <p class="project-description-text underbold">
+          Participants actively shaped their ideal workflows, which made
+          the converged journey easier to align on across markets.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <img id="footer-star" src="assets/images/footer_star.svg" />
+      <div class="footer-link-group">
+        <p id="footer-email" class="footer-link">
+          <a href="mailto:jessicachong.8@gmail.com">EMAIL</a>
+        </p>
+        <p id="footer-linkedin" class="footer-link">
+          <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
+            >LINKEDIN</a
+          >
+        </p>
+        <p id="footer-resume" class="footer-link">
+          <a
+            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            target="_blank"
+            >RESUME</a
+          >
+        </p>
+      </div>
+      <div class="footer-credit">
+        <p id="design-credit">Website designed by me</p>
+        <p id="coding-credit">Coded by Brian Chong</p>
+      </div>
     </footer>`
 };
+
+export const workshopGate = `<div class="workshop-gate">
+  <div class="workshop-gate-card">
+    <h3 class="workshop-gate-title">This case study is locked</h3>
+    <p class="workshop-gate-subtitle">Enter the password to view it</p>
+    <form class="workshop-gate-form" id="workshop-gate-form">
+      <input
+        class="workshop-gate-input"
+        id="workshop-gate-input"
+        type="password"
+        placeholder="Password"
+        autocomplete="off"
+        aria-label="Password"
+      />
+      <button class="workshop-gate-button" type="submit">Unlock</button>
+    </form>
+    <p class="workshop-gate-error" id="workshop-gate-error" hidden>
+      Incorrect password, please try again
+    </p>
+    <a class="workshop-gate-back" href="index.html#work">Back to work</a>
+  </div>
+</div>`;

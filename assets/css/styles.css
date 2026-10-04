@@ -172,6 +172,7 @@ li {
   margin-top: 2vw;
 }
 
+#workshop-project,
 #nhg-project,
 #capitalview-project,
 #design-project,
@@ -184,6 +185,7 @@ li {
   transition: 0.25s ease-in-out;
 }
 
+#workshop-project:hover,
 #nhg-project:hover,
 #capitalview-project:hover,
 #design-project:hover,
@@ -196,6 +198,11 @@ li {
 .project-image {
   width: 40vw;
   position: relative; /* Needed for overlapping */
+}
+
+#workshop-project .project-image {
+  border: 0.21vw solid #282828;
+  border-radius: 0.8vw;
 }
 
 .project-text-container {
@@ -246,12 +253,14 @@ li {
 
 .nhg-container,
 .capitalview-container,
-.nexus-container {
+.nexus-container,
+.workshop-container {
   padding: 2vw 12vw;
   margin: 0 auto;
 }
 
-#project-title-capitalview {
+#project-title-capitalview,
+#project-title-workshop {
   width: 85vw;
 }
 
@@ -294,6 +303,7 @@ li {
   color: #646464;
 }
 
+#workshop-image1,
 #nhg-image1,
 #nhg-image6,
 #nhg-image7,
@@ -643,7 +653,8 @@ footer {
 
   .capitalview-container,
   .nhg-container,
-  .nexus-container {
+  .nexus-container,
+  .workshop-container {
     padding: 2vw 4vw;
   }
 
@@ -671,6 +682,11 @@ footer {
     margin-bottom: 10vw;
   }
 
+  #workshop-image2,
+  #workshop-image3,
+  #workshop-image4,
+  #workshop-image5,
+  #workshop-image6,
   #nhg-image2,
   #nhg-image3,
   #nhg-image4,
@@ -747,6 +763,7 @@ footer {
     margin-top: 4vw;
   }
 
+  #workshop-project,
   #nhg-project,
   #capitalview-project,
   #design-project,
@@ -757,6 +774,11 @@ footer {
 
   .project-image {
     width: 100%;
+  }
+
+  #workshop-project .project-image {
+    border-width: 0.49vw;
+    border-radius: 1.85vw;
   }
 
   .project-text-container {
@@ -787,3 +809,131 @@ footer {
   }
 }
 /* End mobile view */
+
+/* Workshop password gate start */
+.workshop-gate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  padding: 8vw 12vw 4vw;
+}
+
+.workshop-gate-card {
+  width: min(38vw, 30rem);
+  background-color: #f5f0e7;
+  border: 0.21vw solid #282828;
+  border-radius: 0.8vw;
+  padding: 3vw 2.5vw 2.5vw;
+  text-align: center;
+}
+
+.workshop-gate-title {
+  color: #282828;
+  margin: 0 0 1vw;
+  font-size: 2em;
+}
+
+.workshop-gate-subtitle {
+  color: #646464;
+  margin: 0 0 2vw;
+}
+
+.workshop-gate-form {
+  display: flex;
+  gap: 0.6vw;
+}
+
+.workshop-gate-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.7vw 1vw;
+  border: 1px solid #646464;
+  border-radius: 0.4vw;
+  background-color: #ffffff;
+  color: #282828;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+}
+
+.workshop-gate-input:focus {
+  outline: none;
+  border-color: #282828;
+}
+
+.workshop-gate-button {
+  padding: 0.7vw 1.6vw;
+  border: none;
+  border-radius: 0.4vw;
+  background-color: #282828;
+  color: #f5f0e7;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.workshop-gate-button:hover {
+  opacity: 0.9;
+}
+
+.workshop-gate-error {
+  color: #b3402a;
+  margin: 1.5vw 0 0;
+  font-size: 0.95rem;
+}
+
+.workshop-gate-back {
+  display: inline-block;
+  margin-top: 1.5vw;
+  color: #646464;
+}
+/* Workshop password gate end */
+
+/* Workshop password gate mobile start */
+@media only screen and (max-width: 768px) {
+  .workshop-gate {
+    min-height: 75vh;
+    padding: 0 4vw;
+  }
+
+  .workshop-gate-card {
+    width: min(92vw, 30rem);
+    border-width: 0.49vw;
+    border-radius: 1.85vw;
+    padding: 6vw 5vw 5vw;
+  }
+
+  .workshop-gate-title {
+    font-size: 1.7em;
+    margin-bottom: 2vw;
+  }
+
+  .workshop-gate-subtitle {
+    margin-bottom: 4vw;
+  }
+
+  .workshop-gate-form {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .workshop-gate-input {
+    padding: 2.5vw 3vw;
+    border-radius: 1vw;
+  }
+
+  .workshop-gate-button {
+    padding: 2.5vw 0;
+    border-radius: 1vw;
+  }
+
+  .workshop-gate-error {
+    margin-top: 3vw;
+  }
+
+  .workshop-gate-back {
+    margin-top: 3vw;
+  }
+}
+/* Workshop password gate mobile end */
