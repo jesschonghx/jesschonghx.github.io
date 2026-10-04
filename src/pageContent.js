@@ -107,6 +107,31 @@ export const pages = {
           </div>
         </div>
       </div>
+      <!-- NHG Project -->
+      <div
+        id="nhg-project"
+        class="project"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <img class="project-image" src="assets/images/main_nhg.png" />
+        <div class="project-text-container">
+          <h3 class="project-text-header">NHG Cares Partners Portal</h3>
+          <p class="project-text">
+            Gathered feedback and requirements, designed and launched in 4
+            months. The portal has onboarded 22 community partners and automate
+            about 1,200 programmes across 100 sites in Central and North
+            Singapore.
+          </p>
+          <div class="project-read-more">
+            <p class="read-more-text">Read More</p>
+            <img
+              class="read-more-arrow"
+              src="assets/images/read_more_arrow.svg"
+            />
+          </div>
+        </div>
+      </div>
       <!-- Design Revamp Project -->
       <div
         id="design-project"
@@ -141,31 +166,6 @@ export const pages = {
             methodologies guiding the process. Improved turnover time for the
             UBS team when searching for accurate, cap table data for private
             companies in Singapore.
-          </p>
-          <div class="project-read-more">
-            <p class="read-more-text">Read More</p>
-            <img
-              class="read-more-arrow"
-              src="assets/images/read_more_arrow.svg"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- NHG Project -->
-      <div
-        id="nhg-project"
-        class="project"
-        data-aos="fade-up"
-        data-aos-duration="750"
-      >
-        <img class="project-image" src="assets/images/main_nhg.png" />
-        <div class="project-text-container">
-          <h3 class="project-text-header">NHG Cares Partners Portal</h3>
-          <p class="project-text">
-            Gathered feedback and requirements, designed and launched in 4
-            months. The portal has onboarded 22 community partners and automate
-            about 1,200 programmes across 100 sites in Central and North
-            Singapore.
           </p>
           <div class="project-read-more">
             <p class="read-more-text">Read More</p>
