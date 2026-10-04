@@ -1,2 +1,5 @@
 node_modules/
 dist/
+
+# Local source screenshots with the real design system (never publish)
+assets/images/Screenshot*

@@ -11,7 +11,7 @@ export const pages = {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1N-WhVJIsJz8Y2moicAVMIaIguSxVhiVQ/view"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -45,7 +45,7 @@ export const pages = {
             >
             <a
               class="nav-link"
-              href="https://drive.google.com/file/d/1N-WhVJIsJz8Y2moicAVMIaIguSxVhiVQ/view"
+              href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
               target="_blank"
               >RESUME</a
             >
@@ -215,7 +215,7 @@ export const pages = {
         </p>
         <p id="footer-resume" class="footer-link">
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -237,7 +237,7 @@ export const pages = {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -271,7 +271,7 @@ export const pages = {
             >
             <a
               class="nav-link"
-              href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
               target="_blank"
               >RESUME</a
             >
@@ -893,7 +893,7 @@ export const pages = {
         </p>
         <p id="footer-resume" class="footer-link">
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -915,7 +915,7 @@ export const pages = {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -949,7 +949,7 @@ export const pages = {
             >
             <a
               class="nav-link"
-              href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
               target="_blank"
               >RESUME</a
             >
@@ -1263,7 +1263,7 @@ export const pages = {
         </p>
         <p id="footer-resume" class="footer-link">
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -1285,7 +1285,7 @@ export const pages = {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -1319,7 +1319,7 @@ export const pages = {
             >
             <a
               class="nav-link"
-              href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
               target="_blank"
               >RESUME</a
             >
@@ -1711,7 +1711,7 @@ export const pages = {
         </p>
         <p id="footer-resume" class="footer-link">
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -1733,7 +1733,7 @@ export const pages = {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
@@ -1767,7 +1767,7 @@ export const pages = {
             >
             <a
               class="nav-link"
-              href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
               target="_blank"
               >RESUME</a
             >
@@ -1808,7 +1808,8 @@ export const pages = {
           <p class="overview-title">Key Activities</p>
           <p class="overview-description">
             Survey Design & Analysis, 1:1 Interviews, Workshop Facilitation,
-            Card Sorting, Journey Mapping, Research Synthesis
+            Card Sorting, Journey Mapping, Research Synthesis, AI-Assisted
+            Prototyping
           </p>
         </div>
         <div
@@ -2120,6 +2121,72 @@ export const pages = {
         </p>
       </div>
 
+      <img class="dot-separator" src="assets/images/dot_separator.svg" />
+
+      <div
+        class="project-description-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <h3 class="project-description-title">
+          From Findings to a Future State
+        </h3>
+        <p class="project-description-text">
+          After consolidating the research, I wanted the findings to go
+          further than a report. Using Claude Code and Codex, I "vibecoded"
+          a working prototype of the recommended future state — a pricing
+          workspace with a clear decision history — compressing weeks of
+          design-build effort into days.
+        </p>
+        <p class="project-description-text">
+          The prototype walks the converged journey end to end:
+        </p>
+        <ul class="bullet-point-container">
+          <li class="project-description-text bullet-point underbold">
+            Trusted case summary. Case status, data sources and limitations
+            shown first, with supporting detail available when needed.
+          </li>
+          <li class="project-description-text bullet-point">
+            Scenario workspace. Benefit and pricing scenarios compared side
+            by side, with assumptions, versions and rationale attached to
+            each option.
+          </li>
+          <li class="project-description-text bullet-point">
+            Clear decision history. Technical price, commercial adjustment,
+            rationale, versions and approvals recorded in one place.
+          </li>
+          <li class="project-description-text bullet-point">
+            Audience-ready outputs. Internal, GCS and Sales outputs
+            generated from the same approved decision record.
+          </li>
+        </ul>
+        <p class="project-description-text">
+          The prototype is still a work in progress — a direction to
+          validate with Underwriting, Actuarial and Sales rather than
+          committed delivery scope. Building it this way let the team see
+          and test the recommendation instead of reading about it.
+        </p>
+      </div>
+
+      <div
+        class="project-image-container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+      >
+        <img id="workshop-image7" src="assets/images/workshop_image7.png" />
+        <p class="image-caption">
+          Future-state prototype — pricing workspace with a clear decision
+          history
+        </p>
+      </div>
+
+      <!-- TODO: add assets/images/workshop_image8.svg and uncomment
+      <div class="project-image-container" data-aos="fade-up" data-aos-duration="750">
+        <img id="workshop-image8" src="assets/images/workshop_image8.svg" />
+        <p class="image-caption">Future-state prototype — outputs by audience</p>
+      </div>
+      -->
+
       <div
         class="project-description-container"
         data-aos="fade-up"
@@ -2162,7 +2229,7 @@ export const pages = {
         </p>
         <p id="footer-resume" class="footer-link">
           <a
-            href="https://drive.google.com/file/d/1OfF07lKKEiHtiftPz74Bpin6aHqu9EHo/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1pCTYLTw0OKhe_8PZNYA0N3J0h2cGDTEU/view?usp=share_link"
             target="_blank"
             >RESUME</a
           >
