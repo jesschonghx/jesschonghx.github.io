@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo } from "react";
 import { createRoot } from "react-dom/client";
-import { pages, workshopGate } from "./pageContent";
+import { pages } from "./pageContent";
 import "./index.css";
 
 const projectLinks = {
@@ -11,17 +11,6 @@ const projectLinks = {
   "design-project": "nexus.html",
   "workshop-project": "workshop.html",
 };
-
-const WORKSHOP_STORAGE_KEY = "workshopUnlocked";
-const WORKSHOP_PASSWORD = atob("U3VuZmxvd2Vy");
-
-function isWorkshopUnlocked() {
-  try {
-    return sessionStorage.getItem(WORKSHOP_STORAGE_KEY) === "1";
-  } catch {
-    return false;
-  }
-}
 
 function loadScript(src) {
   const existingScript = document.querySelector(`script[src="${src}"]`);
@@ -80,11 +69,7 @@ async function initPagePlugins(pageKey) {
 
 function App() {
   const pageKey = useMemo(getPageKey, []);
-  const [workshopUnlocked, setWorkshopUnlocked] = useState(isWorkshopUnlocked);
-  const workshopLocked = pageKey === "workshop" && !workshopUnlocked;
-  const html = workshopLocked
-    ? workshopGate
-    : pages[pageKey] ?? pages.home;
+  const html = pages[pageKey] ?? pages.home;
 
   useEffect(() => {
     const handleClick = (event) => {
@@ -109,49 +94,15 @@ function App() {
 
     window.ondragstart = () => false;
     document.addEventListener("click", handleClick);
-
-    if (!workshopLocked) {
-      initPagePlugins(pageKey).catch((error) => {
-        console.error("Unable to initialize page plugins", error);
-      });
-    }
+    initPagePlugins(pageKey).catch((error) => {
+      console.error("Unable to initialize page plugins", error);
+    });
 
     return () => {
       document.removeEventListener("click", handleClick);
       window.ondragstart = null;
     };
-  }, [pageKey, workshopLocked]);
-
-  useEffect(() => {
-    if (!workshopLocked) return;
-
-    const form = document.getElementById("workshop-gate-form");
-    if (!form) return;
-
-    const input = document.getElementById("workshop-gate-input");
-    const error = document.getElementById("workshop-gate-error");
-    input?.focus();
-
-    const handleSubmit = (event) => {
-      event.preventDefault();
-
-      if (input?.value === WORKSHOP_PASSWORD) {
-        try {
-          sessionStorage.setItem(WORKSHOP_STORAGE_KEY, "1");
-        } catch {}
-        setWorkshopUnlocked(true);
-      } else {
-        if (error) error.hidden = false;
-        if (input) {
-          input.value = "";
-          input.focus();
-        }
-      }
-    };
-
-    form.addEventListener("submit", handleSubmit);
-    return () => form.removeEventListener("submit", handleSubmit);
-  }, [workshopLocked]);
+  }, [pageKey]);
 
   return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }

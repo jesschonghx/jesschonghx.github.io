@@ -3,3 +3,6 @@ dist/
 
 # Local source screenshots with the real design system (never publish)
 assets/images/Screenshot*
+
+# Local HEIC source photos (converted copies are committed instead)
+assets/images/*.HEIC
