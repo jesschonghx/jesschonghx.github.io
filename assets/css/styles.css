@@ -806,10 +806,6 @@ footer {
     width: 100%;
   }
 
-  #workshop-project .project-image {
-    border-width: 0.55vw;
-    border-radius: 2.3vw;
-  }
 
   .project-text-container {
     background-color: #282828;
