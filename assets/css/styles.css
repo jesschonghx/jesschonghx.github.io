@@ -201,8 +201,9 @@ li {
 }
 
 #workshop-project .project-image {
-  border: 0.21vw solid #282828;
-  border-radius: 0.8vw;
+  border: 0.24vw solid #282828;
+  border-radius: 1vw;
+  background-color: #282828;
 }
 
 .project-text-container {
@@ -353,6 +354,7 @@ li {
   margin: 0 auto;
   display: block;
 }
+
 
 .presenting-capitalview-container {
   background-color: #eeecf8;
@@ -805,8 +807,8 @@ footer {
   }
 
   #workshop-project .project-image {
-    border-width: 0.49vw;
-    border-radius: 1.85vw;
+    border-width: 0.55vw;
+    border-radius: 2.3vw;
   }
 
   .project-text-container {
@@ -837,5 +839,3 @@ footer {
   }
 }
 /* End mobile view */
-
-

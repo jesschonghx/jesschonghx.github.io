@@ -89,14 +89,14 @@ export const pages = {
         data-aos="fade-up"
         data-aos-duration="750"
       >
-        <img class="project-image" src="assets/images/main_workshop.svg" />
+        <img class="project-image" src="assets/images/pricing_index.png" />
         <div class="project-text-container">
-          <h3 class="project-text-header">Renewal Pricing Discovery Workshop</h3>
+          <h3 class="project-text-header">From Five Markets to One Product Vision</h3>
           <p class="project-text">
-            Facilitated a discovery workshop with AIA's local business units
-            across Singapore, Malaysia, Hong Kong, Thailand and Group
-            Corporate Solutions to map the corporate insurance pricing
-            renewal process and co-design one ideal workflow.
+            Co-facilitated a cross-market discovery workshop with AIA's five
+            markets to align their corporate insurance renewal pricing, then
+            vibe-coded a pitch-ready prototype of the future state with
+            Claude Code and Codex.
           </p>
           <div class="project-read-more">
             <p class="read-more-text">Read More</p>
@@ -120,9 +120,9 @@ export const pages = {
           <h3 class="project-text-header">NHG Cares Partners Portal</h3>
           <p class="project-text">
             Gathered feedback and requirements, designed and launched in 4
-            months. The portal has onboarded 22 community partners and automate
-            about 1,200 programmes across 100 sites in Central and North
-            Singapore.
+            months. The portal has onboarded over 20 community partners and
+            streamlined more than 400 programmes across approximately 100
+            sites in Central and North Singapore.
           </p>
           <div class="project-read-more">
             <p class="read-more-text">Read More</p>
@@ -1722,7 +1722,6 @@ export const pages = {
   "workshop": `<nav class="navbar-desktop">
       <div class="nav-left"><a href="index.html">JESSCHONG</a></div>
       <ul class="nav-right">
-        <li><a href="index.html#about">ABOUT</a></li>
         <li><a id="work-link" href="index.html#work">WORK</a></li>
         <li>
           <a href="https://www.linkedin.com/in/jessicachonghx/" target="_blank"
@@ -1756,7 +1755,6 @@ export const pages = {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="index.html#about">ABOUT</a>
             <a class="nav-link" href="index.html#work">WORK</a>
             <a
               class="nav-link"
@@ -1966,6 +1964,7 @@ export const pages = {
         data-aos-duration="750"
       >
         <img id="workshop-image12" src="assets/images/pricing_workshop_image12.png" />
+        <p class="image-caption">Constructed a customer journey map</p>
       </div>
 
       <img class="dot-separator" src="assets/images/dot_separator.svg" />
